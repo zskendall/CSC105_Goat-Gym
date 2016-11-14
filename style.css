@@ -34,6 +34,7 @@ html { background-color: #d0ccd0; }
     width: 90%; height: 65%;
     top: 35%; left: 5%;
     z-index: 1;
+    display: block;
 }
 
 .content { background-color: #605856; padding: 1%; color: #fbfcff; }
@@ -128,4 +129,18 @@ span { font-family: Arial, sans-serif; }
 #logo h1 {
     padding-left: 85px;
     font-size: 34px;
+}
+
+.icon {
+    float: right;
+    background-color: black;
+    width: 75px; height: 75px;
+    margin: 15px;
+}
+
+.bigImage {
+    display: table; margin: 0px auto;
+    width: 300px;
+    background-color: red;
+    z-index: 2;
 }
