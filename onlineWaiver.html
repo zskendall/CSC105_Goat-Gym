@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online Waiver</title>
+        <link rel = "stylesheet" href = "style.css" />
+        <script src = "script.js"></script>
+    </head>
+    
+    <body>
+        <div id = 'head'>
+            <div style="width:30%; background-color:red; height:100px; text-align:center"><h1>Insert Logo here<br>MEHHHEHHHH</h1></div>
+<!--            <a href = "index.html"><img src = "../images/farm_friends.gif" /></a>-->
+            <div id = 'nav'>
+                <ul>
+                    <a href = "info.html"><li>Info</li></a>
+                    <a href = "about.html"><li>About</li></a>
+                    <a href = "contact.html"><li>Contact</li></a>
+                    <a href = "gallery.html"><li>Gallery</li></a>
+                    <a href = "shop.html"><li>Shop</li></a>
+                </ul>
+            </div>
+        </div>
+        
+        <div id = 'big'>
+            <h1 style="text-align:center">Ibex Climbing Gym Participation Waiver</h1>
+            Climbing is inherently dangerous. Though we at ICG minimize the risk as much as possible, in order to participate, you must fill out the following form to sign our waiver.<br>
+            <button value="Read Waiver" onclick="waiver.html">Read Waiver</button>
+                <form>
+                    <!-- Participant Name -->
+                    <div class = 'section'>
+                        <h2>Participant Name</h2>
+                        <div class = 'formfield'>
+                            <input type="text" data-isrequired='yes' name='fname'>
+                            <br>
+                            <span class = "superscript">First Name
+                                <span class = "required">*</span>
+                            </span>
+                        </div>
+                        <div class = 'formfield'>
+                            <input type="text" name='minitial'>
+                            <br>
+                            <span class = "superscript">Middle Initial</span>
+                        </div>
+                        <div class = 'formfield'>
+                            <input type="text" data-isrequired='yes' name='lname'>
+                            <br>
+                            <span class = "superscript">Last Name
+                                <span class = "required">*</span>
+                            </span>
+                        </div>
+                    </div>
+                    <br>
+                    
+                    <!-- Participant DOB -->
+                    <div class = 'section'>
+                        <h2>Participant DOB <span class = 'required'>*</span></h2>
+                        <div class ='formfield'>
+                            <!-- Month dropdown -->
+                            <select id = 'month' name="month" data-isrequired='yes' name = 'DOBmonth'>
+                                <option selected disabled class='hideoption'>- Month -</option>
+                                <option value="01">January</option>
+                                <option value="02">February</option>
+                                <option value="03">March</option>
+                                <option value="04">April</option>
+                                <option value="05">May</option>
+                                <option value="06">June</option>
+                                <option value="07">July</option>
+                                <option value="08">August</option>
+                                <option value="09">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+
+                            <!-- Day dropdown -->
+                            <select id = 'day' name="day" data-isrequired='yes' name = 'DOBday'></select>
+
+                            <!-- Year dropdown -->
+                            <select id="year" name="year" data-isrequired='yes' name = 'DOByear'>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- Email -->
+                    <div class = 'section'>
+                        <h2>Email Address   <span class = 'required'>*</span></h2>
+                        <div class='formfield'>
+                            <input type='text' name='email' value size="30">
+                        </div>
+                    </div>
+                    
+                    <!-- Participant Address -->
+                    <div class = 'section'>
+                        <h2>Participant Address</h2>
+                        <div class='formfield'>
+                            <input type='text' name='address' data-isrequired = 'yes' value size='50'>
+                            <br><span class="superscript">Address<span class='required'>*</span></span>
+                        </div>
+                        <br style="clear:both">
+                        <div class='formfield'>
+                            <input type='text' name='city' data-isrequired = 'yes'>
+                            <br><span class="superscript">City<span class='required'>*</span></span>
+                        </div>
+                        <div class='formfield'>
+                            <input type='text' name='state' data-isrequired = 'yes' value size="5">
+                            <br><span class="superscript">State<span class='required'>*</span></span>
+                        </div>
+                        <div class='formfield'>
+                            <input type='text' name='zip' data-isrequired = 'yes' value size="10">
+                            <br><span class="superscript">Zip/Postal<span class='required'>*</span></span>
+                        </div>
+                        <br style="clear:both">
+                        <div class='formfield'>
+                            <input type='text' name='country'>
+                            <br><span class="superscript">Country</span>
+                        </div>
+                    </div>
+                        
+                    <!-- Phone -->
+                    <div class = 'section'>
+                        <h2>Phone Numbers   <span class = 'required'>*</span></h2>
+                        <div class='formfield'>
+                            <input type='text' name='home' data-isrequired = 'yes' value size='15'>
+                            <br><span class="superscript">Home Phone</span>
+                        </div>
+                        <div class='formfield'>
+                            <input type='text' name='work' data-isrequired = 'yes' value size="15">
+                            <br><span class="superscript">Work Phone</span>
+                        </div>
+                        <div class='formfield'>
+                            <input type='text' name='cell' data-isrequired = 'yes' value size="15">
+                            <br><span class="superscript">Cell Phone</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Emergency Contact -->
+                    <div class = 'section'>
+                        <h2>Emergency Contact</h2>
+                        <div class='formfield'>
+                            <input type='text' name='emergName' data-isrequired = 'yes'>
+                            <br><span class="superscript">Emergency Contact Name<span class='required'>*</span></span>
+                        </div>
+                        <br style="clear:both">
+                        <div class='formfield'>
+                            <input type='text' name='emergNum' data-isrequired = 'yes' value size="15">
+                            <br><span class="superscript">Emergency Phone<span class='required'>*</span></span>
+                        </div>
+                    </div>
+                    
+                    <!-- Acceptance -->
+                    <div class = 'section'>
+                        <h2>Electronic Signature Consent</h2>
+                        <input type="checkbox" name='consent' value='consented'>
+                        By checking here, you are consenting to the use of your electronic signature. In lieu of a paper waiver, this electronic signature will be binding.
+                    </div>
+                    
+                    <center>
+                        <button type='submit' id='submit_button' value="Submit and Climb!">Submit and Climb!</button>
+                    </center>
+                </form>
+            </div>
+            
+
+        <script src = 'script.js'></script>
+    </body>
+
+</html>
