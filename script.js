@@ -27,20 +27,45 @@ function thumbnails() {
     for(var i = 0; i < Math.floor(width/(75+30))*5; i++) {
         ico += "<div class = 'icon' id = '" + i + "' onclick='showImage(this.id)'> </div>";
     }
+    document.getElementById('thumb').innerHTML = ico;
+}
 
-    document.getElementById('big').innerHTML = ico;
+function makeElement(type) {
+    return document.createElement(type);
+}
+
+function makeElement(type, content, classname, id) {
+    var elem = document.createElement(type);
+    if (content != null) elem.innerHTML = content;
+    if (classname != null) elem.className += classname;
+    if (id != null) elem.id += id;
+    return elem;
 }
 
 function showImage(imgID) {
     console.log(imgID);
-    var elem = document.getElementById(imgID);
-    // var src = elem.src;
-    // ^ or something similar
-    var enlarged = document.createElement("div");
-    enlarged.className += 'bigImage';
-    enlarged.innerHTML += "Hello, I'd like to be an image please.";
-    console.log(enlarged.className);
-    document.body.appendChild(enlarged);
+    
+    if (document.getElementById('bigImage') == null) {
+        var elem = document.getElementById(imgID);
+        // var src = elem.src;
+        // ^ or something similar
+        var box = makeElement("div", null, null, 'expand');
+        var enlarged = makeElement("div", "Hello, I'd like to be an image please. " + imgID, null, 'bigImage');
+        console.log(enlarged.id);
+        console.log(box.id);
+        var left = makeElement("div", "<", 'switch', 'left');
+        var right = makeElement("div", ">", 'switch', 'right');
+        box.appendChild(left);
+        box.appendChild(enlarged);
+        box.appendChild(right);
+        document.getElementById('big').appendChild(box);
+    } else {
+        // change img src to new src
+        var elem = document.getElementById(imgID);
+        // var src = elem.src;
+        // ^ or something similar
+        document.getElementById('bigImage').innerHTML = "Hello, I'd like to be an image please. " + imgID;
+    }
 }
 
 function main() {

@@ -6,8 +6,10 @@ html { background-color: #d0ccd0; }
     background-color: #274156;
     left: 0px; top: 0px;
     margin: 0px;
-    z-index: 3;
+    z-index: 2;
 }
+
+a { text-decoration: none; }
 
 #nav { width: 100%; color: white; }
 
@@ -17,7 +19,6 @@ html { background-color: #d0ccd0; }
 
 #nav a {
     background-color: #605856;
-    text-decoration: none;
     font-family: Helvetica;
     padding: 1%;
     color: #fbfcff;
@@ -34,7 +35,6 @@ html { background-color: #d0ccd0; }
     width: 90%; height: 65%;
     top: 35%; left: 5%;
     z-index: 1;
-    display: block;
 }
 
 .content { background-color: #605856; padding: 1%; color: #fbfcff; }
@@ -131,16 +131,42 @@ span { font-family: Arial, sans-serif; }
     font-size: 34px;
 }
 
+#expand {
+    position: absolute;
+    display: flex;
+    width: 70%;
+    top: 10%; left: calc(30%/2);
+    background-color: blue;
+    height: 60%;
+    line-height: 100%;
+}
+
+#thumb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .icon {
-    float: right;
     background-color: black;
     width: 75px; height: 75px;
     margin: 15px;
 }
 
-.bigImage {
-    display: table; margin: 0px auto;
-    width: 300px;
+#bigImage {
+    width: 80%;
     background-color: red;
-    z-index: 2;
+    z-index: 3;
 }
+
+.switch {
+    width: 10%;
+    text-align: center;
+    font-size: 5em;
+    font-weight: bold;
+    margin: auto 0px;
+}
+
+#left { float: left; }
+
+#right { float: right; }
