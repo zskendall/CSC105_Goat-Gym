@@ -100,3 +100,23 @@ span { font-family: Arial, sans-serif; }
     height: 50pt;
     width: 400px
 }
+
+#logo {
+    margin-left: 10px;
+    position:relative;
+    width: 250px; 
+    background-color:black;
+    color: white;
+    height:120px;
+}
+
+#logo img {
+    position: absolute;
+    margin: 5px;
+    height: 110px;
+}
+
+#logo h1 {
+    padding-left: 85px;
+    font-size: 34px;
+}
