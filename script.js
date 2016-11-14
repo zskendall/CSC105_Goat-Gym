@@ -30,10 +30,6 @@ function thumbnails() {
     document.getElementById('thumb').innerHTML = ico;
 }
 
-function makeElement(type) {
-    return document.createElement(type);
-}
-
 function makeElement(type, content, classname, id) {
     var elem = document.createElement(type);
     if (content != null) elem.innerHTML = content;
