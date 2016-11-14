@@ -6,6 +6,7 @@ html { background-color: #d0ccd0; }
     background-color: #274156;
     left: 0px; top: 0px;
     margin: 0px;
+    z-index: 3;
 }
 
 #nav { width: 100%; color: white; }
@@ -33,6 +34,7 @@ html { background-color: #d0ccd0; }
     position: absolute;
     width: 90%; height: 70%;
     top: 30%; left: 5%;
+    z-index: 1;
 }
 
 .content { background-color: #605856; padding: 1%; color: #fbfcff; }
@@ -59,3 +61,26 @@ h4 { margin: 5px 0px; }
 .date { float: left; margin-right: 10px; }
 
 .time { float: right; }
+
+p { margin: 0px auto; font-family: Arial, sans-serif; font-size: 0.9em; }
+
+button { margin: 2% 0px; }
+
+form { display: block; }
+
+.section { width: 100%; padding-bottom: 5%;}
+
+.formfield { float: left; padding-right: 7px; padding-bottom: 6px; }
+
+span { font-family: Arial, sans-serif; }
+
+.superscript { font-size: small; vertical-align: top;}
+
+.required { color: red; font-weight: bold; font-size: small; }
+
+#submit_button {
+    font-weight: bold;
+    font-size: 18px;
+    height: 50pt;
+    width: 400px
+}
