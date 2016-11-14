@@ -74,6 +74,10 @@ form {
 
 #contact { display: table; }
 
+#waiver { display: block; }
+
+#waiver h2 { text-align: left; font-family: serif; }
+
 form input, textarea {
     margin-top: 2px;
     font-family: Helvetica;
