@@ -184,3 +184,11 @@ span { font-family: Arial, sans-serif; }
 #gear { justify-content: center; }
 
 #gear h3 { margin-top: 25px; }
+
+td h3 { margin-bottom: 0; }
+
+td p { padding-right: 10px; }
+
+.content a { color: cyan; }
+
+.content a:hover { color: navy; }
