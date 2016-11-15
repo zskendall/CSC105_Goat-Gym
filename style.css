@@ -170,3 +170,17 @@ span { font-family: Arial, sans-serif; }
 #left { float: left; }
 
 #right { float: right; }
+
+#brands { justify-content: center; }
+
+#brands img { height: 50px; width: auto; }
+
+.gear { width: 100%; line-height: 75px; }
+
+.gear img { height: auto; width: 75px; float: left; }
+
+.gear td { padding: 0 10px; }
+
+#gear { justify-content: center; }
+
+#gear h3 { margin-top: 25px; }
