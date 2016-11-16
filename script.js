@@ -2,7 +2,7 @@
 var heights = [];
 var widths = [];
 var currentImg;
-var lastImg = 38;
+var lastImg = 30;
 
 function fillDay() {
     var start = 1;
@@ -28,7 +28,7 @@ function thumbnails() {
     var ico = "";
     var width = document.getElementById('big').offsetWidth;
     console.log(width);
-    for(var i = 0; i < 39; i++) {
+    for(var i = 0; i < 31; i++) {
         var prefix = "0";
         if (i+1 < 10) prefix = "00";
         var filename = "images/gallery/IMG_"+prefix+(i+1)+".JPG";
