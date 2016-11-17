@@ -41,9 +41,9 @@ a { text-decoration: none; }
 
 .content img { width: 75%; display: block; margin: 0px auto; }
 
-#smol { float: left; width: 31%; }
+.smol { float: left; width: 31%; }
 
-#tol { float: right; width: 62%; }
+.tol { float: right; width: 62%; }
 
 h1 { font-family: Arial, sans-serif; text-align: center; }
 
@@ -198,9 +198,13 @@ span { font-family: Arial, sans-serif; }
 
 #right { float: right; }
 
-#brands { justify-content: center; }
+#brands { position: fixed; width: 27.9%; justify-content: center; }
 
 #brands img { height: 50px; width: auto; }
+
+#brands table { width: 100%; margin: 0 auto; }
+
+#brands td { justify-content: center; width: 50%; margin: 3%; padding: 3%; }
 
 .gear { width: 100%; line-height: 75px; }
 
@@ -228,7 +232,7 @@ td a { color: crimson; }
 
 td a:hover { color: darkblue; }
 
-td img { height: 150px; width: auto; display: table; margin: 0 auto; }
+#staff img { height: 150px; width: auto; display: table; margin: 0 auto; }
 
 #register {
     display: table; margin: 10px auto 0 auto;
