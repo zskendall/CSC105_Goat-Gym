@@ -83,8 +83,8 @@ function showImage(imgID) {
         box.style.width = displayWidth;
         
         // make navigation bars
-        var left = makeElement("div", "<", 'switch', 'left');
-        var right = makeElement("div", ">", 'switch', 'right');
+        var left = makeElement("div", "«", 'switch', 'left');
+        var right = makeElement("div", "»", 'switch', 'right');
         left.onclick = function() { changeImage("left"); };
         right.onclick = function() { changeImage('right'); };
         
