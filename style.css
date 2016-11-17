@@ -177,11 +177,14 @@ span { font-family: Arial, sans-serif; }
 }
 
 .switch {
-    width: 10%;
+    width: 60px;
     text-align: center;
-    font-size: 5vw;
+    font-size: 75px;
     font-weight: bold;
     margin: auto 0px;
+    color: #fbfcff;
+    line-height: 360px;
+    opacity: 0.5;
 }
 
 #left { float: left; }
