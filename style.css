@@ -72,6 +72,13 @@ h4 { margin: 5px 0px; text-align: center; }
 
 .content p { margin: 0px auto; font-family: Arial, sans-serif; font-size: 0.9em; }
 
+#big img {
+    position: absolute;
+    width: 31%;
+    left: 0; top: 85%;
+    padding: 1%;
+}
+
 form {
     padding: 10px;
     font-weight: bold;
