@@ -6,7 +6,7 @@
         <script src = 'script.js'></script>
     </head>
     
-    <body>
+    <body  onload="setInterval('changeSlide(\'slide\')', 3000)">
         <div id = 'head'>
             <div id ="logo">
                 <img src="logos/icglogo2.jpg">
@@ -25,8 +25,8 @@
         
         <div id = 'big'>
     <!--        Left Content-->
-            <div  class = 'content' id = 'smol'>
-                <h1>Name of Gym Here</h1>
+            <div  class = 'content smol'>
+                <h1>Ibex Climbing Gym</h1>
                 <h4>666 Mirkwood Court</h4>
                 <h4>Waldorf, MD 20601</h4>
                 
@@ -45,8 +45,8 @@
             </div>
 
     <!--        Right Content-->
-            <div  class = 'content' id = 'tol'>
-                <img src = 'images/pigclimbs1.jpg' />
+            <div  class = 'content tol'>
+                <img src = "images/IMG_039.JPG" id = 'slide'/>
             </div>
         </div>
 
