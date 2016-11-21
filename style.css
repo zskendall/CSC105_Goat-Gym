@@ -114,11 +114,7 @@ h4 { margin: 5px 0px; text-align: center; }
 .filler {
     position: relative;
     width: 33%;
-<<<<<<< HEAD
-    top: 7%;
-=======
     left: 0; top: 7%;
->>>>>>> revert-1
 }
 
 form {
@@ -280,7 +276,6 @@ td a:hover { color: darkblue; }
 #staff img { height: 150px; width: auto; display: table; margin: 0 auto; }
 
 #register {
-    position: relative;
     display: table; margin: 10px auto 0 auto;
     font-weight: bold; font-size: 14pt;
     color: #172C40;
