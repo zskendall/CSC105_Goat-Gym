@@ -4,37 +4,12 @@
         <title>Ibex Climbing Gym</title>
         <link rel = "stylesheet" href = "style.css" />
         <script src = 'script.js'></script>
-        <script>
-            var slideList = new Array("images/IMG_002.JPG", "images/IMG_009.JPG", "images/IMG_016.JPG", "images/IMG_020.JPG", "images/IMG_021.JPG", "images/IMG_022.JPG", "images/IMG_031.JPG", "images/IMG_039.JPG")
-            
-            var numSlides = slideList.length
-            var currentSlide = 0
-            
-            var preloads = new Array(numSlides)
-            for (var i = 0; i < numSlides; i++) {
-                preloads[i] = new Image()
-                preloads[i].src = slideList[i]
-            }
-            
-            function changeSlide(itag) {
-                // find next slide (wrap around to 0 when at end):
-                currentSlide = (currentSlide+1)%numSlides
-                document.getElementById(itag).src = slideList[currentSlide]
-            }
-        </script>
     </head>
     
-<<<<<<< HEAD
-    <body onload="setInterval('changeSlide(\'slide\')', 3000)">
-        <div id = 'head'>
-        </div>
-        <div id ="logo">
-=======
     <body onLoad="setInterval('changeSlide(\'pic\')',4000)">
-        <div id = 'head'>
-        </div>
+        <div id = 'head'></div>
+        <div id = 'overlay'></div>
             <a href = 'index.html'><div id ="logo">
->>>>>>> revert-1
                 <img src="logos/icglogo2.jpg">
                 <h1>Ibex<br />Climbing<br /> Gym</h1>
             </div></a>
@@ -80,11 +55,7 @@
 
     <!--        Right Content-->
             <div  class = 'content tol'>
-<<<<<<< HEAD
-                <img src = "images/IMG_039.JPG" id = 'slide'/>
-=======
                 <img src = "images/IMG_002.JPG" id="pic" />
->>>>>>> revert-1
             </div>
         </div>
 

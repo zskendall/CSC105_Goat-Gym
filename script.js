@@ -7,7 +7,7 @@ var currentImg;
 var lastImg = 30;
 var currentSlide;
 var numSlides;
-var images;
+var slideList;
 
 function fillDay() {
     var start = 1;
@@ -136,9 +136,10 @@ function switchImage(e) {
 }
 
 // this method actually changes the images
-function changeSlide(imgID) {
+function changeSlide(itag) {
+    // find next slide (wrap around to 0 when at end):
     currentSlide = (currentSlide + 1) % numSlides;
-    document.getElementById(imgID).src = images[currentSlide];
+    document.getElementById(itag).src = slideList[currentSlide];
 }
 
 function main() {
@@ -146,16 +147,16 @@ function main() {
     if (document.getElementById('year') != null) fillYear();
     
     // prepare images for slideshow
-    images = new Array("images/IMG_002.JPG", "images/IMG_009.JPG", "images/IMG_016.JPG", "images/IMG_020.JPG", "images/IMG_021.JPG", "images/IMG_031.JPG", "images/IMG_039.JPG");
+    slideList = new Array("images/IMG_002.JPG", "images/IMG_009.JPG", "images/IMG_016.JPG", "images/IMG_020.JPG", "images/IMG_021.JPG", "images/IMG_031.JPG", "images/IMG_039.JPG");
     
-    numSlides = images.length;
-    currentSlide = numSlides-1;
+    numSlides = slideList.length;
+    currentSlide = 0;
     
-    var preloads = new Array(numSlides);
+    var preloads = new Array(numSlides)
     for (var i = 0; i < numSlides; i++) {
-        preloads[i] = new Image();
-        preloads[i].src = images[i];
-        preloads[i].id = 'slide';
+        preloads[i] = new Image()
+        preloads[i].src = slideList[i]
+        preloads[i].id = 'pic';
     }
 }
 
