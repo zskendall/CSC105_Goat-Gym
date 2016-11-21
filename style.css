@@ -73,10 +73,9 @@ h4 { margin: 5px 0px; text-align: center; }
 .content p { margin: 0px auto; font-family: Arial, sans-serif; font-size: 0.9em; }
 
 .filler {
-    position: absolute;
-    width: 31%;
-    left: 0; top: 85%;
-    padding: 1%;
+    position: relative;
+    width: 33%;
+    top: 7%;
 }
 
 form {
@@ -235,6 +234,7 @@ td a:hover { color: darkblue; }
 #staff img { height: 150px; width: auto; display: table; margin: 0 auto; }
 
 #register {
+    position: relative;
     display: table; margin: 10px auto 0 auto;
     font-weight: bold; font-size: 14pt;
     color: #274156;
