@@ -25,9 +25,7 @@ Upon receiving feedback on our conceptual sketches, we reconsidered how we wante
 <br>
 
 #### <i>Color Scheme</i>
-After deciding our layout, we worked on styling just the home page for color. Our process in this was to first start with simple colors built into CSS, but we soon realized that we would need a color scheme to give our site a sense of unity and cohesiveness. Once we decided to choose a color scheme, we decided on either a five- or six-color palette, with the addition of neutral like black and white. At first, we worked with a color palette found on <a href = "https://color.adobe.com/explore/newest/">Adobe Color Capture</a>, a website and app by Adobe that lets you make color schemes either by hand or by taking a picture. The first two such palettes, while they had a combination of intensities and hues, did not work well when viewed in a browser, so we moved on to...
-<!--website we used here-->
-which allowed us to generate a random palette, then keep colors we liked and generate more until we achieved a palette.
+After deciding our layout, we worked on styling just the home page for color. Our process in this was to first start with simple colors built into CSS, but we soon realized that we would need a color scheme to give our site a sense of unity and cohesiveness. Once we decided to choose a color scheme, we decided on either a five- or six-color palette, with the addition of neutral like black and white. At first, we worked with a color palette found on <a href = "https://color.adobe.com/explore/newest/">Adobe Color Capture</a>, a website and app by Adobe that lets you make color schemes either by hand or by taking a picture. The first two such palettes, while they had a combination of intensities and hues, did not work well when viewed in a browser, so we continued to experiment with various schemes until we found one that was acceptable.
 <!--Why did we do this? How did it make the site more effective.-->
 <br>
 
