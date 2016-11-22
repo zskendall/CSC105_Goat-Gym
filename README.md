@@ -56,5 +56,5 @@ Most sources used are linked above within the Design Document, but below are lin
 5) <a href = 'http://stackoverflow.com/questions/23800977/javascript-how-to-use-onclick-function-also-with-keyboard'>http://stackoverflow.com/questions/23800977/javascript-how-to-use-onclick-function-also-with-keyboard</a><br>
 6) <a href = 'http://stackoverflow.com/questions/6242976/javascript-hide-show-element'>http://stackoverflow.com/questions/6242976/javascript-hide-show-element</a><br>
 #### <i>Other</i>
-<a href = 'http://www.cs.smith.edu/~nhowe/Teaching/csc105/examples/slides.html'>CSC105 Class Examples</a>
+<a href = 'http://www.cs.smith.edu/~nhowe/Teaching/csc105/examples/slides.html'>CSC105 Class Examples</a><br>
 <a href = 'http://www.w3schools.com/TAgs/att_input_required.asp'>http://www.w3schools.com/TAgs/att_input_required.asp</a>
