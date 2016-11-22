@@ -29,6 +29,11 @@ function fillYear() {
     document.getElementById('year').innerHTML = options;
 }
 
+function fillDates() {
+    fillDay();
+    fillYear();
+}
+
 function thumbnails() {
     var ico = "";
     var width = document.getElementById('big').offsetWidth;
@@ -142,10 +147,29 @@ function changeSlide(itag) {
     document.getElementById(itag).src = slideList[currentSlide];
 }
 
+function isFormOK() {
+    var name = fname.value;
+
+    // check phone numbers
+    if (emergNum.value != "" && emergNum.value.length == 10) {
+        alert("Thank you, " + name);
+        return true;
+    }
+    if (home.value != "" && home.value.length == 10) {
+        alert("Thank you, " + name);
+        return true;
+    } else if (work.value != "" && work.value.length == 10) {
+        alert("Thank you, " + name);
+        return true;
+    } else if (cell.value != "" && cell.value.length == 10) {
+        alert("Thank you, " + name);
+        return true;
+    }    
+    alert("Please enter a valid phone number");
+    return false;
+}
+
 function main() {
-    if (document.getElementById('day') != null) fillDay();
-    if (document.getElementById('year') != null) fillYear();
-    
     // prepare images for slideshow
     slideList = new Array("images/IMG_002.JPG", "images/IMG_009.JPG", "images/IMG_016.JPG", "images/IMG_020.JPG", "images/IMG_021.JPG", "images/IMG_031.JPG", "images/IMG_039.JPG");
     
