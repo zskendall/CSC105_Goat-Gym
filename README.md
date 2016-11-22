@@ -57,3 +57,4 @@ Most sources used are linked above within the Design Document, but below are lin
 6) <a href = 'http://stackoverflow.com/questions/6242976/javascript-hide-show-element'>http://stackoverflow.com/questions/6242976/javascript-hide-show-element</a><br>
 #### <i>Other</i>
 <a href = 'http://www.cs.smith.edu/~nhowe/Teaching/csc105/examples/slides.html'>CSC105 Class Examples</a>
+<a href = 'http://www.w3schools.com/TAgs/att_input_required.asp'>http://www.w3schools.com/TAgs/att_input_required.asp</a>
