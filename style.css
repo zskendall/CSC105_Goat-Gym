@@ -14,7 +14,7 @@ html { background-color: #D7EEFF; }
 
 #overlay {
     width: inherit; height: inherit;
-    background-image: url('../project1/images/holds.gif');
+    background-image: url('images/holds.gif');
     background-repeat: repeat-x;
     opacity: 0.5
 }

@@ -5,7 +5,7 @@
         <link rel = "stylesheet" href = "style.css" />
     </head>
     
-    <body>
+    <body onload="fillDates()">
         <div id = 'head'><div id = 'overlay'></div></div>
 
             <a href = 'index.html'><div id ="logo">
@@ -36,12 +36,12 @@
     <!--        Right Content-->
             
                 <h2>Membership Registration</h2>
-                <form id = 'waiver'>
+                <form id = 'waiver' onsubmit="return(isFormOK())">
                     <!-- Participant Name -->
                     <div class = 'section'>
-                        <h2>Name <span class= 'required'>*</span></h2>
+                        <h2>Participant Name</h2>
                         <div class = 'formfield'>
-                            <input type="text" data-isrequired='yes' name='fname'>
+                            <input type="text" required id = 'fname' name='fname'>
                             <br>
                             <span class = "superscript">First Name
                                 <span class = "required">*</span>
@@ -53,7 +53,7 @@
                             <span class = "superscript">Middle Initial</span>
                         </div>
                         <div class = 'formfield'>
-                            <input type="text" data-isrequired='yes' name='lname'>
+                            <input type="text" required name='lname'>
                             <br>
                             <span class = "superscript">Last Name
                                 <span class = "required">*</span>
@@ -64,10 +64,10 @@
                     
                     <!-- Participant DOB -->
                     <div class = 'section'>
-                        <h2>Date of Birth <span class = 'required'>*</span></h2>
+                        <h2>Participant DOB <span class = 'required'>*</span></h2>
                         <div class ='formfield'>
                             <!-- Month dropdown -->
-                            <select id = 'month' name="month" data-isrequired='yes' name = 'DOBmonth'>
+                            <select id = 'month' name="month" required name = 'DOBmonth'>
                                 <option selected disabled class='hideoption'>- Month -</option>
                                 <option value="01">January</option>
                                 <option value="02">February</option>
@@ -84,10 +84,10 @@
                             </select>
 
                             <!-- Day dropdown -->
-                            <select id = 'day' name="day" data-isrequired='yes' name = 'DOBday'></select>
+                            <select id = 'day' name="day" required name = 'DOBday'></select>
 
                             <!-- Year dropdown -->
-                            <select id="year" name="year" data-isrequired='yes' name = 'DOByear'>
+                            <select id="year" name="year" required name = 'DOByear'>
                             </select>
                         </div>
                     </div>
@@ -96,23 +96,23 @@
                     <div class = 'section'>
                         <h2>Email Address   <span class = 'required'>*</span></h2>
                         <div class='formfield'>
-                            <input type='text' name='email' value size="30">
+                            <input type='email' required name='email' value size="30">
                         </div>
                     </div>
                     
-                     <!-- Phone -->
+                    <!-- Phone -->
                     <div class = 'section'>
                         <h2>Phone Numbers   <span class = 'required'>*</span></h2>
                         <div class='formfield'>
-                            <input type='text' name='home' data-isrequired = 'yes' value size='15'>
+                            <input type='text' id = 'home' name='home' value size='15'>
                             <br><span class="superscript">Home Phone</span>
                         </div>
                         <div class='formfield'>
-                            <input type='text' name='work' data-isrequired = 'yes' value size="15">
+                            <input type='text' id = 'work' name='work' value size="15">
                             <br><span class="superscript">Work Phone</span>
                         </div>
                         <div class='formfield'>
-                            <input type='text' name='cell' data-isrequired = 'yes' value size="15">
+                            <input type='text' id = 'cell' name='cell' value size="15">
                             <br><span class="superscript">Cell Phone</span>
                         </div>
                     </div>
@@ -121,20 +121,20 @@
                     <div class = 'section'>
                         <h2>Participant Address</h2>
                         <div class='formfield'>
-                            <input type='text' name='address' data-isrequired = 'yes' value size='50'>
+                            <input type='text' name='address' required value size='50'>
                             <br><span class="superscript">Address<span class='required'>*</span></span>
                         </div>
                         <br style="clear:both">
                         <div class='formfield'>
-                            <input type='text' name='city' data-isrequired = 'yes'>
+                            <input type='text' name='city' required>
                             <br><span class="superscript">City<span class='required'>*</span></span>
                         </div>
                         <div class='formfield'>
-                            <input type='text' name='state' data-isrequired = 'yes' value size="5">
+                            <input type='text' name='state' required value size="5">
                             <br><span class="superscript">State<span class='required'>*</span></span>
                         </div>
                         <div class='formfield'>
-                            <input type='text' name='zip' data-isrequired = 'yes' value size="10">
+                            <input type='text' name='zip' required value size="10">
                             <br><span class="superscript">Zip/Postal<span class='required'>*</span></span>
                         </div>
                         <br style="clear:both">
@@ -143,9 +143,9 @@
                             <br><span class="superscript">Country</span>
                         </div>
                     </div>
-             
+                             
                     <center>
-                        <button type='submit' id='submit_button' value="Submit and Climb!">Register!</button>
+                        <input type='submit' id='submit_button' value="Register!"></input>
                     </center>
                 </form>
             
