@@ -28,14 +28,14 @@ a { text-decoration: none; }
 #nav li { display: inline; margin: 5%; }
 
 #nav ul a {
-    background-color: #2E577F;
+    background-color: #4483BF;
     font-family: Helvetica;
     padding: 1%;
     color: #fbfcff;
 }
 
 #nav ul a:hover {
-    background-color: #4483BF;
+    background-color: #529DE5;
     text-decoration: underline;
     color: black;
 }
@@ -49,7 +49,7 @@ a { text-decoration: none; }
 }
 
 #nav #info #drop a:hover {
-    background-color: #4483BF;
+    background-color: #529DE5;
     text-decoration: underline;
     color: black;
 }
@@ -65,7 +65,7 @@ a { text-decoration: none; }
 
 #nav #drop a {
     display: none;
-    background-color: #2E577F;
+    background-color: #4483BF;
     list-style: none;
     float: left;
     text-decoration: none;
